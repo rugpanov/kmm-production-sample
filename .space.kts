@@ -5,7 +5,7 @@
 */
 
 job("Build and run tests") {
-    container(displayName = "Gradle build", image = "amazoncorretto:17-alpine") {
+    container(displayName = "Gradle build", image = "androidsdk/android-30") {
         kotlinScript { api ->
             // here goes complex logic
             api.gradlew("build")
